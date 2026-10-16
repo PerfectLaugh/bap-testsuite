@@ -13,7 +13,7 @@ setup-logs $test
 set passes 0
 set expected_passes 7
 
-eval spawn bap sse/floats --pass=run
+eval spawn bap sse/floats --passes=run
 
 expect {
     "PASS" {incr passes; exp_continue}

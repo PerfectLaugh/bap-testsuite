@@ -20,7 +20,7 @@ set expected_passes 7
 set opts {
     --bil-enable-fp-emulation
     --x86-with-legacy-floating-points
-    --pass=run
+    --passes=run
 }
 
 eval spawn bap sse/floats [join $opts " "]

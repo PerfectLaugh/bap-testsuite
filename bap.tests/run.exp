@@ -56,7 +56,7 @@ foreach bin $bins {
 
     foreach system $systems {
         set full_opts $opts
-        lappend full_opts "--run-system=$system"
+        lappend full_opts "--run-systems=$system"
 
         match "bin/$bin" "" [join $full_opts " "] {
             "ill-typed" { fail "program is ill-typed" }

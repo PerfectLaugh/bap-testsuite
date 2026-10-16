@@ -14,7 +14,7 @@ set suite {
 
 foreach {input output} $suite {
     set test "x86-torture.$input"
-    match "$input" "--stop-on-error --arch=x86" {
+    match "$input" "--stop-on-errors --arch=x86" {
         $output {pass $test}
         default {fail $test}
     }

@@ -31,7 +31,7 @@ foreach system $systems {
         }
 
         lappend opts "--dump=bir"
-        lappend opts "--run-system=$system"
+        lappend opts "--run-systems=$system"
         set opts [join $opts " "]
 
         set patterns [subst {
